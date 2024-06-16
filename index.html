@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>Web Fundamentals 131</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <title>WDD 131 - Dynamic Web Fundamentals - Levi Jost Martins</title>
 </head>
 <body>
     <header>
@@ -13,8 +13,8 @@
     <nav>
         <ul>
             <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
-            <li><a href="https://byui.instructure.com/courses/299928" target="_blank">I-Learn</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/?lang=eng" target="_blank">Scripture</a></li>
+            <li><a href="https://byui.instructure.com/" target="_blank">I-Learn</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/7?lang=eng" target="_blank">Scripture</a></li>
             <li><a href="https://byui.instructure.com/courses/299928/assignments/13181697?module_item_id=35929314" target="_blank">Final Project</a></li>
         </ul>
     </nav>
@@ -22,17 +22,15 @@
         <section class="main-content">
             <h2>To be added</h2>
             <div class="grid">
-                <div class="about-me">
+                <div class="card about-me">
                     <h3>About me</h3>
                     <p>My name is Levi. I was born in Rio Grande do Sul, Brazil and live with my family here. I am currently working as a Service Desk Analyst at Amcor. Outside of work, I'm an avid photographer, capturing the stunning animals and vibrant culture of my home state.</p>
                     <img src="images/me.JPG" alt="Levi's Photo">
-                </div>
-                <div class="location">
                     <h3>Rio Grande do Sul, Brazil</h3>
                     <img src="images/rs.png" alt="Rio Grande do Sul Flag">
                     <p>Rio Grande do Sul, the southernmost state in Brazil, is known for its diverse landscapes, ranging from coastal plains to the highlands of the Serra Gaúcha. The capital, Porto Alegre, is a cultural and economic hub. The state's rich heritage is influenced by European immigrants, indigenous peoples, and African heritage, reflected in its traditions, cuisine, and festivals. Economically, it is a leader in agriculture and industry, with a strong presence in agribusiness and manufacturing. Tourism thrives with attractions like Aparados da Serra National Park and the renowned vineyards of Vale dos Vinhedos.</p>
                 </div>
-                <div class="web-dev-resources">
+                <div class="card web-dev-resources">
                     <h3>Web Dev Resources</h3>
                     <ul>
                         <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
@@ -47,8 +45,9 @@
         </section>
     </div>
     <footer>
-        <p>&copy;2024 Levi Jost Martins - Brazil</p>
-        <p>Last Modification: 15/06/2024</p>
+        <p><span id="currentyear"></span> Levi Jost Martins - Brazil</p>
+        <p id="lastModified"></p>
     </footer>
+    <script src="scripts/getdates.js"></script>
 </body>
 </html>
