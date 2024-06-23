@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Levi Jost Martins">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Levi Jost Martins">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Week 02 - Temple</title>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" target="_blank">Home</a></li>
+                    <li><a href="#" target="_blank">Old</a></li>
+                    <li><a href="#" target="_blank">New</a></li>
+                    <li><a href="#" target="_blank">Large</a></li>
+                    <li><a href="#" target="_blank">Small</a></li>
+                </ul>
+            </nav>
+            <div class="off-screen-menu">
+                <ul>
+                    <li><a href="#" target="_blank">Home</a></li>
+                    <li><a href="#" target="_blank">Old</a></li>
+                    <li><a href="#" target="_blank">New</a></li>
+                    <li><a href="#" target="_blank">Large</a></li>
+                    <li><a href="#" target="_blank">Small</a></li>
+                </ul>
+            </div>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div class="gallery">
+            <figure>
+                <img src="images/temple/sao-paulo-second-temple.jpg" alt="Temple 1">
+                <figcaption>Temple 1</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple/sao-paulo-second-temple2.jpg" alt="Temple 2">
+                <figcaption>Temple 2</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple/portoalegre-2.JPG" alt="Temple 3">
+                <figcaption>Temple 3</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple/sao-paulo-temple2.jpg" alt="Temple 4">
+                <figcaption>Temple 4</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple/swiss-temple.PNG" alt="Temple 5">
+                <figcaption>Temple 5</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple/moroni1.JPG" alt="Temple 6">
+                <figcaption>Temple 6</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple/portoalegre-templeclouds.JPG" alt="Temple 7">
+                <figcaption>Temple 7</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple/sao-paulo-temple.jpg" alt="Temple 8">
+                <figcaption>Temple 8</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple/moroni2.JPG" alt="Temple 9">
+                <figcaption>Temple 9</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> My Temple Album. All rights reserved.</p>
+        <p id="lastModified"></p>
+        <script src="scripts/getdates.js" defer></script>
+    </footer>
+    <script src="scripts/temples.js" defer></script>
+</body>
+</html>
