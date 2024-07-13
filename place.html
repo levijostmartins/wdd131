@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="week03 project">
+    <meta name="Author" content="Levi Jost Martins">
+    <title>Week03 vamo dale</title>
+    <link rel="stylesheet" href="styles/week03.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Brazil</h1>
+        </header>
+        <section class="image-section">
+            <picture>
+                <div class="hero">
+                    <source srcset="images/capbig.webp" media="min-width: 1000px">
+                    <source srcset="images/capsmall.webp" media="min-width: 550px">
+                    <img src="images/capbig.webp" alt="Capivara" class="hero-image">
+                </div>
+            </picture>
+        </section>
+        <section class="data-section">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 8,515,767 square kilometers</p>
+            <p><strong>Population:</strong> Approximately 214 million (as of 2023)</p>
+            <p><strong>Capital:</strong> Brasília</p>
+            <p><strong>Languages:</strong> Portuguese</p>
+            <p><strong>Currency:</strong> Brazilian Real (BRL)</p>
+            <p><strong>Time Zone:</strong> Brasília Time (UTC -3)</p>
+            <p><strong>Calling Code:</strong> +55</p>
+            <p><strong>Internet TLD:</strong> .br</p>
+        </section>
+        <section class="weather-section">
+            <h2>Weather</h2>
+            <img src="images/storm.svg" alt="Weather Icon" class="weather-icon">
+            <p><strong>Temperature:</strong> <span id="temperatureValue">7°C</span></p>
+            <p><strong>Wind Speed:</strong> <span id="windSpeedValue">90 km/h</span></p>
+            <p><strong>Wind Chill:</strong> <span id="windChillResult"></span></p>
+        </section>
+        <footer>
+            <p><span id="currentyear"></span> Levi Jost Martins - Brazil</p>
+            <p id="lastModified"></p>
+            <script src="scripts/getdates.js" defer></script>
+            <script src="scripts/Windchill.js" defer></script>
+        </footer>
+    </div>
+</body>
+</html>
