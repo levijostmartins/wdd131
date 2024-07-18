@@ -1,0 +1,156 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E8EDE7;
+}
+main {
+    background-color: #E8EDE7;
+}
+header {
+    width: 100%;
+    background-color: #036280;
+    color: #E8EDE7;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin-left: 20px;
+    color: #E8EDE7;
+}
+
+h2 {
+    color: #012E4A;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+nav {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+nav li {
+    font-size: 1.5em;
+}
+
+nav a {
+    color: #E8EDE7;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    color: #81BECE;
+    text-decoration: underline
+}
+
+.main-nav {
+    display: none;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 1rem auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap: 1rem;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 400px;
+    box-shadow: 10px 10px 10px #a0a0a072;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #378BA4;
+    color: #E8EDE7;;
+    padding: 1rem;
+}
+
+.ham-menu {
+    height: 50px;
+    width: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #012E4A;
+    border-radius: 25px;
+    transition: .3s ease;
+}
+.ham-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.off-screen-menu {
+    background-color: #E8EDE7;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+
+.off-screen-menu li{
+    color:#036280;
+}
+

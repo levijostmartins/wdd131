@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Levi Jost Martins">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Levi Jost Martins">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Week 02 - Temple</title>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+            <nav>
+                <ul>
+                    <button id="old">Old Temples</button>
+                    <button id="new">New Temples</button>
+                    <button id="large">Large Temples</button>
+                    <button id="small">Small Temples</button>
+                    <button id="home">All Temples</button>
+                </ul>
+            </nav>
+            <div class="off-screen-menu">
+                <ul>
+                    <button id="old">Old Temples</button>
+                    <button id="new">New Temples</button>
+                    <button id="large">Large Temples</button>
+                    <button id="small">Small Temples</button>
+                    <button id="home">All Temples</button>
+                </ul>
+            </div>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div class="gallery"></div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> My Temple Album. All rights reserved.</p>
+        <p id="lastModified"></p>
+        <script src="scripts/getdates.js" defer></script>
+    </footer>
+    <script src="scripts/temples.js" defer></script>
+</body>
+</html>
