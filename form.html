@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Levi Jost Martins">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Levi Jost Martins">
+    <link rel="stylesheet" href="styles/product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Week 05 - products</title>
+</head>
+<body>
+    <div class="container"> 
+        <h1>Product Review</h1> 
+        <form id="reviewForm" action="review.html" method="get">
+            <label for="product-name">Product Name</label>
+            <select id="product-name" name="product-name" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+            
+            <label for="rating">Overall Rating</label>
+            <div id="rating" class="rating">
+                <input type="radio" name="rating" value="1" id="star1" required><label for="star1">★</label>
+                <input type="radio" name="rating" value="2" id="star2" required><label for="star2">★★</label>
+                <input type="radio" name="rating" value="3" id="star3" required><label for="star3">★★★</label>
+                <input type="radio" name="rating" value="4" id="star4" required><label for="star4">★★★★</label>
+                <input type="radio" name="rating" value="5" id="star5" required><label for="star5">★★★★★</label>
+            </div>
+
+            <label for="date-of-installation">Date of Installation</label>
+            <input type="date" id="date-of-installation" name="date-of-installation" required>
+            
+            <label>Which features did you find useful in the product?<br>(Check all that apply)</label>
+            <div class="checkbox-group">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="durability" name="features" value="Durability">
+                    <label for="durability">Durability</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="ease-of-use" name="features" value="Ease of Use">
+                    <label for="ease-of-use">Ease of Use</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="performance" name="features" value="Performance">
+                    <label for="performance">Performance</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="design" name="features" value="Design">
+                    <label for="design">Design</label>
+                </div>       
+            </div>
+            
+            <label for="review">Written Review (Optional)</label>
+            <textarea id="review" name="review"></textarea>
+            
+            <label for="name">Your Name (Optional)</label>
+            <input type="text" id="name" name="name">
+            
+            <input type="submit" value="Post Review">
+        </form>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> WDD 131 - Dynamic Web Fundamentals - Levi Jost Martins</p>
+            <p id="lastModified"></p>
+            <script src="scripts/getdates.js" defer></script>
+            <script src="scripts/products.js" defer></script>
+        </footer>
+    </div>
+</body>
+</html>
