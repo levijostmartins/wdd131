@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
       'images/piano1.jpg',
       'images/enquadrado.jpg',
       'images/plant2.jpg',
-
   ];
 
   const galleryContainer = document.querySelector('.gallery-container');
@@ -16,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   photos.forEach(photo => {
       const imgElement = document.createElement('img');
       imgElement.src = photo;
+      imgElement.loading = 'lazy';
       imgElement.classList.add('gallery-photo');
       imgElement.addEventListener('click', openModal);
       galleryContainer.appendChild(imgElement);
