@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Syne:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/final.css" />
+        <meta name="author" content="Levi Jost Martins">
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Levi Jost Martins">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wedgallery.html">Gallery</a></li>
+                <li><a href="contactus.html">Contact</a></li> <!-- correct it later after project to keep it a single page -->
+            </ul>
+        </nav>
+        <section id="about" class="about">
+            <div class="empty">
+                <figure>
+                    <img src="images/levi.JPG" width="200" />
+                </figure>   
+            </div>
+            <article>
+                <div class="title">
+                    <h1>Levi's Photography</h1>
+                </div>
+                <div class="description">
+                    <p>Transform your vision into stunning works of art with our specialized art-focused photography services. As an art-focused photographer, I bring a unique blend of creativity, technical skill, and an eye for the extraordinary to every project.</p>
+                </div>
+            </article>
+        </section>
+        <section id="services" class="service service-wedding sticky">
+            <article>
+                <figure>
+                    <img src="images/piano2.jpg" width= 100% />
+                </figure>
+                <div class="text">
+                    <h2>Wedding</h2>
+                    <p>Capture the magic of your special day with our exquisite wedding photography services. Our team of talented photographers is dedicated to preserving every cherished moment, from the intimate glances to the joyous celebrations. We blend candid and posed shots to create a timeless narrative of your wedding day.</p>
+                    <a href="wedgallery.html">Wedding Gallery</a>
+                </div>
+            </article>
+        </section>
+        <section class="service service-animals sticky">
+            <article>
+                <figure>
+                    <img src="images/lizard.jpg" width="200" />
+                </figure>
+                <div class="text">
+                    <h2>Animals</h2>
+                    <p>Dive into the wild and wonderful world of animal photography with our expert services. We specialize in capturing the essence and personality of animals, whether they are your beloved pets or magnificent wildlife. Our experienced photographers are passionate about animals and dedicated to showcasing their beauty and spirit in every shot.</p>
+                    <a href="#contact">Contact us</a> <!-- add gallery-->
+                </div>
+            </article>
+        </section>
+        <section class="service service-event sticky">
+            <article>
+                <figure>
+                    <img src="images/tbday.jpg" width="200" />
+                </figure>
+                <div class="text">
+                    <h2>Event</h2>
+                    <p>Capture the excitement and energy of your special occasions with our professional event photography services. Whether it's a corporate event, a birthday celebration, a concert, or any other gathering, our team of skilled photographers is dedicated to documenting every memorable moment.</p>
+                    <a href="#contact">Contact us</a> <!-- add gallery-->
+                </div>
+            </article>
+        </section>
+        <section id="contact" class="contact full-screen">
+            <form action="submit_form.php" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service:</label>
+                    <select id="service" name="service" required>
+                        <option value="wedding">Wedding</option>
+                        <option value="animals">Animals</option>
+                        <option value="event">Event</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <script src="scripts/animation.js"></script>
+    </body>
+</html>

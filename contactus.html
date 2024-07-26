@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Syne:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/final.css" />
+        <meta name="author" content="Levi Jost Martins">
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Levi Jost Martins">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8">
+    </head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li> <!-- not working due to css styles, I wont be using it later so I did't fix-->
+            <li><a href="wedgallery.html">Gallery</a></li>
+            <li><a href="contactus.html">Contact</a></li> <!-- correct it later after project to keep it a single page -->
+        </ul>
+    </nav>
+    <section id="contact" class="contact full-screen">
+        <form action="submit.php" method="post" class="contact-form"> <!-- not present in this file -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="service">Service:</label>
+                <select id="service" name="service" required>
+                    <option value="wedding">Wedding</option>
+                    <option value="animals">Animals</option>
+                    <option value="event">Event</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>

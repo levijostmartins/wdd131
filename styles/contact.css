@@ -1,0 +1,124 @@
+/* Styles for the contact form and floating balls */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Syne', sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 45px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-family: 'Space Mono', monospace;
+    text-decoration: none;
+}
+
+section {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 100px);
+    top: 100px;
+    z-index: 2;
+}
+
+section.full-screen {
+    height: 100vh;
+    top: 0;
+    margin-top: 0;
+    z-index: 3;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background: #1c47ff;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+}
+
+.contact-form button:hover {
+    background: #1437cc;
+}
+
+.ball {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--blue);
+    animation: move 5s infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(100px, 100px);
+    }
+}
